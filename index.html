@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
-    <title>AI Generated Poem Generator</title>
+    <title>AI Poem Generator</title>
   </head>
   <body>
     <header>
-      <h1>AI Generated Poem Generator</h1>
+      <h1 class="title-card">AI Poem Generator</h1>
     </header>
     <main>
-      <form>
+      <form class="poem-finder">
         <input
           type="text"
           placeholder="What's the poem about?"
           autocomplete="off"
           minlength="2"
+          class="search-text"
+          id="search-text-input"
           autofocus
           required
         />
-        <input type="submit" />
+        <input class="search-button" id="search-btn" type="submit" />
       </form>
       <div class="poem">
         The sun rises<br />
@@ -30,7 +32,7 @@
         at your screen.
       </div>
     </main>
-    <footer>
+    <footer class="footer-notes">
       This AI project was coded by
       <a href="https://github.com/Nova-Ndlovu">Nova Ndlovu</a> and is open
       sourced on <a href="https://github.com/Nova-Ndlovu/Ai-Shi">Github</a> and
