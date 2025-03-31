@@ -1,56 +1,88 @@
 body {
   background: linear-gradient(rgb(197, 217, 223), rgb(22, 37, 47));
   background-size: cover;
-background-repeat: no-repeat;
-width: 90%;
-height:95vh;
-font-family: Verdana;
+  background-repeat: no-repeat;
+  width: 99%;
+  height: 97vh;
+}
+
+.poetry {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgb(5, 17, 22);
-  text-align: center;
+  padding: 12px;
+}
+
+.poetry .title-card {
+  display: block;
+  background: linear-gradient(
+    to bottom,
+    rgba(241, 217, 189),
+    rgba(241, 217, 189, 0.6) 68%
+  );
+  border-radius: 6px;
+  max-width: 50%;
+  padding: 3px 14px;
 }
 
 main {
   display: block;
   justify-content: center;
-  margin: 16px 0 auto;
-  text-align: center;
 }
 
-.poem-finder {
+.poetry .poem-finder {
+  display: block;
+  position: relative;
   border: none;
   border-radius: 6px;
-  max-width: 90%;
-  max-height: 5vh;
-  margin: 6px 60px auto;
+  max-width: 45%;
+  padding: 0 12px;
 }
 
-.search-text {
+.poem-finder .search-text {
   border: none;
   background-color: rgb(4, 50, 69);
-  color: rgb(241, 217, 189);
-  font-size: 14px;
-  line-height: 1.5;
-  border-radius: 6px;
+  color: rgb(147, 177, 130);
+  font-size: 17px;
+  margin-right: 0;
+  border-top-left-radius: 6px;
 }
 
-.search-button {
+.poem-finder .search-button {
   border: none;
-  background-color:rgb(82, 96, 74);
-  color: rgb(241, 217, 189);
-  font-size: 16px;
-  line-height: 1.5;
-  border-radius: 6px;
+  background-color: rgb(197, 217, 223);
+  color: rgb(82, 96, 74);
+  font-size: 17px;
+  margin-left: 0;
+  border-bottom-right-radius: 6px;
 }
 
-.poem {
-  display: block;
-  max-width: 100%;
+.poetry .poem {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(82, 96, 74, 0),
+    rgba(28, 39, 23, 0.8) 95%
+  );
+  border-radius: 16px;
+  max-width: 50%;
   max-height: 80vh;
   font-size: 20px;
   line-height: 1.5;
   padding: 18px;
+  margin: 16px 0 auto;
 }
 
-.footer-notes {
-  font-sixe: 16px;
+.poetry .footer-notes {
+  font-size: 12px;
+  text-align: center;
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+  color: rgb(197, 217, 223);
+}
+
+a:hover {
+  color: rgb(142, 51, 25);
 }
