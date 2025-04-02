@@ -23,12 +23,21 @@
             minlength="2"
             class="search-text"
             id="search-text-input"
+            style="--clr: #043245"
             autofocus
             required
           />
-          <input class="search-button" id="search-btn" type="submit" />
+          <input
+            style="--clr: #c5d9df"
+            class="search-button"
+            id="search-btn"
+            type="submit"
+          />
+          <div class="hint">i.e ice, fire, aurora borealis / australis</div>
         </form>
-        <div class="poem" id="poem-text"></div>
+        <div class="poem peekaboo" id="poem-text">
+          <div class="loading-poem">Loading poetry</div>
+        </div>
       </main>
       <footer class="footer-notes">
         This AI project was coded by
