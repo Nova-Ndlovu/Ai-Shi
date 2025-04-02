@@ -13,13 +13,13 @@ function displayPoetry(response) {
 function generatePoetry(prompt) {
   let apiKey = "2903bd515o84e51d2d0at09a3a53f67a";
   let context =
-    "Please respond in the voice of a stoic person who has lived their entire lives in the frigid northern hinterlands and values the warmth of companionship, the awe inspiring beauty of nature and refuses to use more than a dozen lines when it comes to their poetry. Please be particular about the poems' lineation and use line breaks whenever there is pause created by any punctuation to ensure that every line of poetry shines on its own line, one after the other in cascading sequence.";
+    "You are tasked with creating a poem that does not exceed 12 lines and being particular about the poem's lineation by always begining each new verse on a new line whenever there is punctuation to create pause, using basic HTML and separating each line with a <br />. Please respond in the voice of a stoic person who has lived their entire lives in the frigid northern hinterlands and values the warmth of companionship, the awe inspiring beauty of nature and refuses to use more than a dozen verses when it comes to their poetry.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  axios.get(apiUrl).then(displayPoetry);
+  let iSeeYou = document.querySelector("#poem-text");
+  iSeeYou.classList.remove("peekaboo");
 
-  console.log("Generating Poem");
-  console.log(`The Context is: ${context}.`);
+  axios.get(apiUrl).then(displayPoetry);
 }
 
 function handleSearchSubmit(event) {
@@ -27,9 +27,7 @@ function handleSearchSubmit(event) {
   let prompt = document.querySelector("#search-text-input");
   generatePoetry(prompt.value);
 
-  prompt = `Please draft a poem about ${prompt.value}.`;
-
-  console.log(`The prompt is: ${prompt}.`);
+  prompt = `Please write a poem about ${prompt.value}.`;
 }
 
 let poetryForm = document.querySelector("#find-poetry");
