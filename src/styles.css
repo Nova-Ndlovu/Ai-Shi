@@ -22,8 +22,8 @@ body {
   display: block;
   background: linear-gradient(
     to bottom,
-    rgba(241, 217, 189),
-    rgba(241, 217, 189, 0.6) 68%
+    rgba(213, 244, 255),
+    rgba(225, 248, 255) 70%
   );
   border-radius: 6px;
   max-width: 50%;
@@ -89,10 +89,11 @@ main {
   position: relative;
   background: linear-gradient(
     to bottom,
-    rgba(82, 96, 74, 0),
-    rgba(28, 39, 23, 0.8) 95%
+    rgba(213, 244, 255, 0),
+    rgba(225, 248, 255, 0.8) 95%
   );
   border-radius: 16px;
+  border: none;
   max-width: 50%;
   max-height: 80vh;
   field-sizing: content;
@@ -129,8 +130,9 @@ main {
     from var(--angle),
     transparent,
     rgb(213, 244, 255),
-    rgb(255, 230, 202),
+    rgb(255, 220, 179),
     rgb(221, 255, 202),
+    rgb(255, 188, 169),
     rgb(225, 248, 255)
   );
   height: 100%;
